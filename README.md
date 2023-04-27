@@ -1,9 +1,4 @@
-1)Add a file .env in your root folder (follow exactly what the .env.example to be able connect it with your database)
-2)open terminal run -> composer install
-3)you should be able to run -> php artisan serve
 
-After open
-1)Seed the UserSeeder (for Admin login purpose)
 
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>

@@ -10,4 +10,10 @@ class freeGift extends Model
     use HasFactory;
     public $table = "freegift";
 
+    protected $fillable = [
+        'name',
+        'data',
+        'mime',
+    ];
+    
 }
