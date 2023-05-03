@@ -4,7 +4,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\COntrollers\DeviceController;
 use App\Http\COntrollers\FreeGiftController;
-use App\Http\COntrollers\VoucherController
+use App\Http\COntrollers\VoucherController;
+use App\Http\Controllers\BankController;
 ;
 
 /*
@@ -34,3 +35,10 @@ Route::get('/vouchers', [VoucherController::class, 'index']);
 
 
 Route::post('vouchers/check', [VoucherController::class, 'checkVoucher'])->name('vouchers.check');
+
+Route::get('/banks/names', [BankController::class, 'getAllBanks'])->name('banks.names');
+
+Route::post('/retrieveAccountInfo', [BankController::class, 'retrieveAccountInfo']);
+Route::post('/validateAccountInfo', [BankController::class, 'validateAccountInfo']);
+Route::post('/deductBankAmount', [BankController::class, 'deductBankAmount']);
+
