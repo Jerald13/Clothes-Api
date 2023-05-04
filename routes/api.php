@@ -6,7 +6,7 @@ use App\Http\COntrollers\DeviceController;
 use App\Http\COntrollers\FreeGiftController;
 use App\Http\COntrollers\VoucherController;
 use App\Http\Controllers\BankController;
-;
+use App\Http\COntrollers\DeliverController;
 
 /*
 |--------------------------------------------------------------------------
@@ -42,3 +42,4 @@ Route::post('/retrieveAccountInfo', [BankController::class, 'retrieveAccountInfo
 Route::post('/validateAccountInfo', [BankController::class, 'validateAccountInfo']);
 Route::post('/deductBankAmount', [BankController::class, 'deductBankAmount']);
 
+Route::get('/deliver', [DeliverController::class, 'index']);
