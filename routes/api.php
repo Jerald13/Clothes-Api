@@ -6,6 +6,8 @@ use App\Http\COntrollers\DeviceController;
 use App\Http\COntrollers\FreeGiftController;
 use App\Http\COntrollers\VoucherController;
 use App\Http\Controllers\BankController;
+use App\Http\Controllers\LogisticController;
+
 ;
 
 /*
@@ -37,6 +39,8 @@ Route::get('/vouchers', [VoucherController::class, 'index']);
 Route::post('vouchers/check', [VoucherController::class, 'checkVoucher'])->name('vouchers.check');
 
 Route::get('/banks/names', [BankController::class, 'getAllBanks'])->name('banks.names');
+
+Route::get('/logistics/names', [LogisticController::class, 'getAll'])->name('logistic.names');
 
 Route::post('/retrieveAccountInfo', [BankController::class, 'retrieveAccountInfo']);
 Route::post('/validateAccountInfo', [BankController::class, 'validateAccountInfo']);

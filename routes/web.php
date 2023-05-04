@@ -66,10 +66,6 @@ Route::middleware(["auth", "user-role:admin"])->group(function () {
 /*   Editor Route    */
 Route::middleware(["auth", "user-role:editor"])->group(function () {
     /*   Product    */
-    Route::post("editor/productCreate", [
-        ImageController::class,
-        "upload",
-    ])->name("editor.productCreate");
 
     Route::get("editor/productCreate", [
         HomeController::class,
@@ -170,3 +166,5 @@ Route::get('/users/{user}', [UserController::class, 'show'])->name('users.show')
 Route::get('/users/{user}/edit', [UserController::class, 'edit'])->name('users.edit');
 Route::put('/users/{user}', [UserController::class, 'update'])->name('users.update');
 Route::delete('/users/{user}', [UserController::class, 'destroy'])->name('users.destroy');
+
+
