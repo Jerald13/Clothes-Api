@@ -31,14 +31,14 @@ class FreeGiftSeeder extends Seeder
             'https://m.media-amazon.com/images/I/71nDK2Q8HAL._AC_UL640_QL65_.jpg'
        ];
 
-        DB::table("FreeGift")->insert([
+        DB::table("_free_gift")->insert([
             [
-                'name' => 'Gift 1',
+                'name' => 'Surprise Gift 1',
                 'data' => $randomImages[rand(0, 10)],
                 'mime' => 'image/jpg',
             ],
             [
-                'name' => 'Gift 2',
+                'name' => 'Surprise Gift 2',
                 'data' => $randomImages[rand(0, 10)],
                 'mime' => 'image/jpg',
             ],

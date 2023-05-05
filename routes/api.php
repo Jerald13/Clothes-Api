@@ -29,7 +29,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 // Route::get('/free-gifts', 'FreeGiftController@index');
 
-Route::get("free-gifts",[FreeGiftController::class,'index']);
+// Route::get("free-gifts",[FreeGiftController::class,'index']);
 
 
 Route::get('/vouchers', [VoucherController::class, 'index']);
@@ -46,3 +46,7 @@ Route::post('/validateAccountInfo', [BankController::class, 'validateAccountInfo
 Route::post('/deductBankAmount', [BankController::class, 'deductBankAmount']);
 
 Route::get('/deliver', [DeliverController::class, 'index']);
+
+
+
+Route::get('/freegift', [FreeGiftController::class, 'index']);

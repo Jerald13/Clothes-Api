@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class freeGift extends Model
 {
     use HasFactory;
-    public $table = "freegift";
+    public $table = "_free_gift";
 
     protected $fillable = [
         'name',
